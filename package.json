@@ -1,5 +1,5 @@
 {
-  "name": "react-json-editor-ajrm",
+  "name": "dx-react-json-editor-ajrm",
   "version": "2.5.9",
   "description": "A stylish, editor-like, modular, react component for viewing, editing, and debugging javascript object syntax!",
   "author": "andrew.redican.mejia@gmail.com",
@@ -22,7 +22,7 @@
     "test:watch": "cross-env NODE_ENV=test BABEL_ENV=modules:commonjs jest --watch",
     "test:coverage": "cross-env NODE_ENV=test BABEL_ENV=modules:commonjs jest --coverage",
     "test:release": "npm run build && npm pack ./dist",
-    "build": "npm run build:commonjs && npm run build:es && npm run build:copy-files && npm run test",
+    "build": "npm run build:commonjs && npm run build:es && npm run build:copy-files",
     "build:commonjs": "cross-env NODE_ENV=production BABEL_ENV=modules:commonjs babel ./src --out-dir ./dist/ --ignore *.test.js",
     "build:es": "cross-env NODE_ENV=production BABEL_ENV=modules:es babel ./src --out-dir ./dist/es --ignore *.test.js",
     "build:copy-files": "node ./scripts/copy-files.js",
